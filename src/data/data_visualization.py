@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1DYMDm97fWD2cLhjzZmnlJzOr0lpqTasH
 """
 
-!git clone https://github.com/harperco/MeasEval.git
+# !git clone https://github.com/harperco/MeasEval.git
 
 import glob
 import pandas as pd
@@ -48,14 +48,4 @@ text= 'Rhea is Saturn’s largest icy moon (radius: 1RRh = 764 km). It orbits th
 text
 
 text
-
-
-
-
-
-
-
-#
-
-
 
