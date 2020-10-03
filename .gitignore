@@ -3,3 +3,4 @@ output/*
 data/*
 *.json
 *.csv
+*.pyc
