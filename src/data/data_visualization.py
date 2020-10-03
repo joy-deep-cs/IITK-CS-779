@@ -10,19 +10,21 @@ Original file is located at
 # !git clone https://github.com/harperco/MeasEval.git
 
 from ..utility.Utility import Utility
+from ..utility.Constants import Constants
 
 allDirs = Utility.getAllDir()
-
+dataDir = allDirs[Constants.getDataDirName()]
 import glob
 import pandas as pd
 
-# df = pd.concat(map(pd.read_csv, glob.glob(allDirs["data"]+'/trial/tsv/*.tsv')))
+
+# df = pd.concat(map(pd.read_csv, glob.glob(dataDir+'/trial/tsv/*.tsv')))
 
 # from google.colab import drive
 # drive.mount('/content/drive')
 
 import pandas as pd
-df =  pd.read_csv(allDirs["data"]+'trial/tsv/S0019103512002801-1342.tsv',delimiter='\t',engine='python')
+df =  pd.read_csv(dataDir+'trial/tsv/S0019103512002801-1342.tsv',delimiter='\t',engine='python')
 df = df.sort_values(by = 'startOffset')
 # df
 
@@ -31,7 +33,7 @@ df = df.sort_values(by = 'startOffset')
 import spacy
 from spacy import displacy
 from IPython.core.display import display, HTML
-text = open(allDirs["data"]+'/trial/txt/S0019103512002801-1342.txt', 'r').read()
+text = open(dataDir+'/trial/txt/S0019103512002801-1342.txt', 'r').read()
 df.columns = ['docId', 'annotSet', 'label', 'start', 'end','annotId','text','other' ]
 ents= df[['label','start','end']].to_dict(orient='records')
 
@@ -43,7 +45,7 @@ display(HTML(html))
 
 import os
 
-list = os.listdir(allDirs["data"]+'/trial/txt') # dir is your directory path
+list = os.listdir(dataDir+'/trial/txt') # dir is your directory path
 number_files = len(list)
 print(number_files)
 

@@ -1,4 +1,5 @@
 import os
+from ..utility.Constants import Constants
 
 class Utility:
 
@@ -21,13 +22,13 @@ class Utility:
         dirDict = {}
         cwd = os.getcwd()
         parentDir = "/".join(cwd.split("/"))
-        dirDict["parent"] = parentDir
-        dirDict["data"] = parentDir+"/data/"
-        dirDict["output"] = parentDir+"/output/"
-        dirDict["resources"] = parentDir+"/resources/"
-        dirDict["src"] = parentDir+"/src/"
-        dirDict["scripts"] = parentDir+"/scripts/"
-        dirDict["temp"] = parentDir+"/temp/"
+        dirDict[Constants.getParentDirName()] = parentDir
+        dirDict[Constants.getDataDirName()] = parentDir+Constants.getDataDirName()
+        dirDict[Constants.getOutputDirName()] = parentDir+Constants.getOutputDirName()
+        dirDict[Constants.getResourcesDirName()] = parentDir+Constants.getResourcesDirName()
+        dirDict[Constants.getSrcDirName()] = parentDir+Constants.getSrcDirName()
+        dirDict[Constants.getScriptsDirName()] = parentDir+Constants.getScriptsDirName()
+        dirDict[Constants.getTempDirName()] = parentDir+Constants.getTempDirName()
 
         return dirDict
     ###########
