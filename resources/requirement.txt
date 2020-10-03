@@ -1,11 +1,1 @@
-pandas
-scipy
-numpy
-torch
-keras
-nltk
-glob2
-glob3
-google
-spacy
-Ipython
+pipenv
