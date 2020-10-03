@@ -1,0 +1,5 @@
+temp/*
+output/*
+data/*
+*.json
+*.csv
