@@ -20,7 +20,7 @@ class Utility:
     def getAllDir():
         dirDict = {}
         cwd = os.getcwd()
-        parentDir = "/".join(cwd.split("/")[:-1])
+        parentDir = "/".join(cwd.split("/"))
         dirDict["parent"] = parentDir
         dirDict["data"] = parentDir+"/data/"
         dirDict["output"] = parentDir+"/output/"

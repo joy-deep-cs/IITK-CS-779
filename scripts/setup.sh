@@ -1,2 +1,2 @@
-pip install -r ../resources/requirement.txt
-python ../src/utility/setup.py
+pip install -r resources/requirement.txt
+python -m src.utility.setup.py

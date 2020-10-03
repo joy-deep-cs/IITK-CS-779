@@ -5,7 +5,6 @@
 1. Make sure you have pip enabled for all the users
 1. clone this repo
     1. cd IITK-CS-779
-    1. cd scripts
-    1. bash setup.sh
+    1. bash scripts/setup.sh
 
 
