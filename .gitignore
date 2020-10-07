@@ -140,4 +140,5 @@ docs/src/*.rst
 temp/
 data/
 output/
+resources/grobid/*
 resources/grobid-0.6.1/*
