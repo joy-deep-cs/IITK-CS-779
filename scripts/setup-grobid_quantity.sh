@@ -13,5 +13,5 @@ cp resources/gradle-wrapper.properties resources/grobid/grobid-0.6.1/grobid-quan
 cd resources/grobid/grobid-0.6.1/grobid-quantities-master
 ./gradlew copyModels
 ./gradlew clean install
-# java -jar build/libs/grobid-quantities-0.6.1-SNAPSHOT-onejar.jar trainingGeneration resources/config/config.yml -dIn ../../../../data/train/text/ -dOut ../../../../output/
 java -jar build/libs/grobid-quantities-0.6.1-SNAPSHOT-onejar.jar server resources/config/config.yml
+# java -jar build/libs/grobid-quantities-0.6.1-SNAPSHOT-onejar.jar trainingGeneration resources/config/config.yml -dIn ../../../../data/train/text/ -dOut ../../../../output/
