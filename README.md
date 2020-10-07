@@ -7,5 +7,6 @@
 1. clone this repo
     1. cd IITK-CS-779
     1. bash scripts/setup.sh
+    1. To setup and run grobid-quantity bash scripts/setup-grobid_quantity.sh
 
 
