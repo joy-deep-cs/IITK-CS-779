@@ -140,3 +140,4 @@ docs/src/*.rst
 temp/
 data/
 output/
+resources/grrobid-0.6.1/*
