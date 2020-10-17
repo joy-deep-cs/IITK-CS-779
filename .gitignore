@@ -138,7 +138,10 @@ docs/src/*.rst
 
 ##folders
 temp/
-data/
 output/
 resources/grobid/*
 resources/grobid-0.6.1/*
+*.json
+*.csv
+*.txt
+*.tsv
