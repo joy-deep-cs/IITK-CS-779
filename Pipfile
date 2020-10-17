@@ -25,6 +25,7 @@ glob3 = "*"
 google = "*"
 spacy = "*"
 Ipython = "*"
+grobid-quantities-client = "*"
 
 
 [requires]

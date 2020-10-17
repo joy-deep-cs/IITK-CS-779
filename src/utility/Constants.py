@@ -23,4 +23,14 @@ class Constants:
     @classmethod
     def getParentDirName(cls):
         return "parent"
+    @classmethod
+    def getOffSetString(cls):
+        return "offset"
+    @classmethod
+    def getStartString(cls):
+        return "Start"
+    @classmethod
+    def getEndString(cls):
+        return "End"
+    
     
